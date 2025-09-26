@@ -3,12 +3,14 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCgzczZettUIqv2H_5m7MnBPgNitW6TDB4",
   authDomain: "doodlemasters-58be1.firebaseapp.com",
+  databaseURL: "https://doodlemasters-58be1-default-rtdb.firebaseio.com",
   projectId: "doodlemasters-58be1",
   storageBucket: "doodlemasters-58be1.firebasestorage.app",
   messagingSenderId: "629477372515",
-  appId: "1:629477372515:web:df2cbe80b70553c843fe56",
-  measurementId: "G-ZXMDV3DY67"
+  appId: "1:629477372515:web:b1d76a4f5fad1b5e43fe56",
+  measurementId: "G-4BZFF2NPFX"
 };
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
