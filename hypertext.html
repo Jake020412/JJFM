@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collaborative Canvas</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #controls {
+      margin-bottom: 10px;
+    }
+    button, select {
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Draw Together!</h1>
+  <p>Open this page on multiple browsers/devices to draw collaboratively.</p>
+  <div id="controls">
+    <select id="colorPicker">
+      <option value="0,0,0">Black</option>
+      <option value="255,0,0">Red</option>
+      <option value="0,255,0">Green</option>
+      <option value="0,0,255">Blue</option>
+      <option value="255,255,0">Yellow</option>
+    </select>
+    <select id="brushSize">
+      <option value="2">Small (2px)</option>
+      <option value="5">Medium (5px)</option>
+      <option value="10">Large (10px)</option>
+    </select>
+    <button id="clearBtn">Clear Canvas</button>
+    <button id="saveBtn">Save Drawing</button>
+  </div>
+  <script src="java.js"></script>
+</body>
+</html>
